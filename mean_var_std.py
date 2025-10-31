@@ -11,7 +11,13 @@ def calculate(list):
     calculations = {
         'mean': [reshaped_list.mean(axis=0).tolist(),
                  reshaped_list.mean(axis=1).tolist(),
-                 reshaped_list.mean()]
+                 reshaped_list.mean()],
+        'variance': [reshaped_list.var(axis=0).tolist(),
+                     reshaped_list.var(axis=1).tolist(),
+                     reshaped_list.var()],
+        'standard deviation': [reshaped_list.std(axis=0).tolist(),
+                               reshaped_list.std(axis=1).tolist(),
+                               reshaped_list.std()]
     }
 
 
