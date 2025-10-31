@@ -8,7 +8,11 @@ def calculate(list):
     reshaped_list = np.array(list).reshape(3, 3)
     
     # Build dictionary with all required calculations
-    calculations = {}
+    calculations = {
+        'mean': [reshaped_list.mean(axis=0).tolist(),
+                 reshaped_list.mean(axis=1).tolist(),
+                 reshaped_list.mean()]
+    }
 
 
 
