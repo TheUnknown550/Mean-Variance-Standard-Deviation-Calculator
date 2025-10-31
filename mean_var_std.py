@@ -17,7 +17,13 @@ def calculate(list):
                      reshaped_list.var()],
         'standard deviation': [reshaped_list.std(axis=0).tolist(),
                                reshaped_list.std(axis=1).tolist(),
-                               reshaped_list.std()]
+                               reshaped_list.std()],
+        'max': [reshaped_list.max(axis=0).tolist(),
+                reshaped_list.max(axis=1).tolist(),
+                reshaped_list.max()],
+        'min': [reshaped_list.min(axis=0).tolist(), 
+                reshaped_list.min(axis=1).tolist(),
+                reshaped_list.min()],
     }
 
 
