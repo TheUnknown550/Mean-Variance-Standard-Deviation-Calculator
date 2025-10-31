@@ -24,8 +24,8 @@ def calculate(list):
         'min': [reshaped_list.min(axis=0).tolist(), 
                 reshaped_list.min(axis=1).tolist(),
                 reshaped_list.min()],
+        'sum': [reshaped_list.sum(axis=0).tolist(),
+                reshaped_list.sum(axis=1).tolist(),
+                reshaped_list.sum()]
     }
-
-
-
     return calculations
